@@ -28,10 +28,6 @@ else if(cantidadDePaginas === 5){
 console.log("gracias por elegirnos, te pedimos que te pongas en contacto para mas informacion")
 //funcion: esta funcion me deberia mostrar que opcion eligio el usuario.
 function esLoQueEligio() {
-    return "esLoQueQuiereElUsuario";
-} 
-let miraLoQueQuiero = "esLoQueQuiereElUsuario";
-esLoQueEligio();
-console.log(miraLoQueQuiero);
-//en esta funcion mi idea era que el usuario elija una opcion y que en la consola me mostrase cual era esa opcion pero no supe como hacerla,
-//quedara para la proxima.
+    return cantidadDePaginas;
+}
+console.log(esLoQueEligio());
