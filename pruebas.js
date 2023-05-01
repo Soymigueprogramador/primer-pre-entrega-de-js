@@ -30,4 +30,31 @@ console.log("gracias por elegirnos, te pedimos que te pongas en contacto para ma
 function esLoQueEligio() {
     return cantidadDePaginas;
 }
-console.log(esLoQueEligio());
+//creo un array para que se guarden los datos ingresados por el usuario.
+const paginas = [];
+    paginas.push(cantidadDePaginas);
+while(cantidadDePaginas) {
+}
+console.log(paginas);
+const sitioWeb = {};
+sitioWeb.cantidadDePaginas = cantidadDePaginas;
+while(cantidadDePaginas) {
+}
+console.log(sitioWeb);
+function buscarEnArray(valorBuscado) {
+  let indice = paginas.indexOf(valorBuscado);
+  if(indice !== -1) {
+    return `El valor ${valorBuscado} fue encontrado en la posición ${indice} del array.`;
+  } else {
+    return `El valor ${valorBuscado} no se encuentra en el array.`;
+  }
+}
+function buscarEnObjeto(valorBuscado) {
+  if(sitioWeb[valorBuscado]) {
+    return `La propiedad ${valorBuscado} existe en el objeto y su valor es ${sitioWeb[valorBuscado]}.`;
+  } else {
+    return `La propiedad ${valorBuscado} no existe en el objeto.`;
+  }
+}
+console.log(buscarEnArray(5));
+console.log(buscarEnObjeto("cantidadDePaginas"));
